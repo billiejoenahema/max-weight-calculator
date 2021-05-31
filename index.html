@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>MAX重量計算</title>
+</head>
+<body>
+  <div class="congtainer border w-25 p-3 bg-light rounded-sm shadow-sm m-5">
+    <div class="form-group">
+      <label>重量 <input type="text" name="weight" id="weight" placeholder="100.25" maxlength="6"> kg</label>
+      <br>
+      <label>回数 <input type="text" name="reps" id="reps" placeholder="2〜10" maxlength="2"> 回</label>
+      <br>
+      <button class="btn btn-primary" id="calc">計算</button>
+    </div>
+    <output>MAX重量：<span id="result"></span> kg</output>
+  </div>
+  <script src="MaxWeight.js"></script>
+</body>
+</html>
